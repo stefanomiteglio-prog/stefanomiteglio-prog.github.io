@@ -1,1 +1,236 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Informativa Privacy - HaulFuel</title>
+  <meta name="description" content="Informativa Privacy di HaulFuel con link per scaricare il documento ufficiale.">
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --surface: #ffffff;
+      --surface-2: #f9fafb;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --primary-soft: #ecfeff;
+      --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      --radius: 18px;
+      --max: 1080px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #f8fafc 0%, #f3f4f6 100%);
+      line-height: 1.6;
+    }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 24px; }
+    .hero, .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+    .hero {
+      padding: 30px;
+      margin-top: 28px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--primary-soft);
+      color: var(--primary);
+      border: 1px solid #b6f0ea;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(30px, 4vw, 46px);
+      line-height: 1.08;
+    }
+    h2 {
+      margin: 30px 0 12px;
+      font-size: 22px;
+      line-height: 1.2;
+    }
+    p { margin: 10px 0; }
+    .muted { color: var(--muted); }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 10px 16px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      border: 1px solid var(--border);
+      color: var(--text);
+      background: #fff;
+    }
+    .btn.primary {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+    .btn.primary:hover { background: var(--primary-dark); }
+    .btn:hover { filter: brightness(0.98); }
+    .card {
+      padding: 24px;
+      margin-top: 22px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 14px;
+      overflow: hidden;
+      font-size: 14px;
+      margin-top: 12px;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: var(--surface-2);
+      font-size: 13px;
+    }
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      margin: 24px 0 40px;
+    }
+    .note {
+      padding: 14px 16px;
+      background: var(--primary-soft);
+      border: 1px solid #b6f0ea;
+      border-radius: 14px;
+      margin-top: 18px;
+    }
+    @media (max-width: 760px) {
+      .wrap { padding: 16px; }
+      .hero, .card { padding: 18px; }
+      table, thead, tbody, th, td, tr { display: block; }
+      thead { display: none; }
+      tr {
+        margin-bottom: 12px;
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        overflow: hidden;
+        background: #fff;
+      }
+      td {
+        border: 0;
+        border-bottom: 1px solid var(--border);
+      }
+      td:last-child { border-bottom: 0; }
+      td::before {
+        content: attr(data-label);
+        display: block;
+        margin-bottom: 6px;
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .04em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <span class="badge">Privacy Policy</span>
+      <h1>Informativa Privacy – HaulFuel</h1>
+      <p class="muted">Ultimo aggiornamento: 28 aprile 2026</p>
+      <p>Questa pagina riproduce il contenuto del documento privacy ufficiale dell'app HaulFuel e mette a disposizione anche il download del file originale.</p>
+      <div class="actions">
+        <a class="btn primary" href="#informativa">Leggi l'informativa</a>
+        <a class="btn" href="./informativa-privacy-playstore.docx" download>Scarica il documento Word</a>
+      </div>
+    </section>
 
+    <section class="card" id="informativa">
+      <h2>Titolare del trattamento</h2>
+      <p><strong>Stefano Miteglio</strong></p>
+
+      <h2>Dati trattati, finalità e conservazione</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Fonte / dati</th>
+            <th>Finalità</th>
+            <th>Conservazione</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Fonte / dati"><strong>Firebase Authentication – UID</strong></td>
+            <td data-label="Finalità">Identificazione utente, associazione di veicoli e rifornimenti, accesso e sincronizzazione multi-device.</td>
+            <td data-label="Conservazione">Per tutta la durata dell’account nell’app.</td>
+          </tr>
+          <tr>
+            <td data-label="Fonte / dati"><strong>Google Sign-In – email</strong></td>
+            <td data-label="Finalità">Accesso tramite account Google.</td>
+            <td data-label="Conservazione">Finché l’account resta attivo.</td>
+          </tr>
+          <tr>
+            <td data-label="Fonte / dati"><strong>SharedPreferences – last_selected_vehicle_uuid</strong></td>
+            <td data-label="Finalità">Memorizzazione dell’ultimo veicolo selezionato per semplificare l’esperienza d’uso.</td>
+            <td data-label="Conservazione">Fino a disinstallazione dell’app.</td>
+          </tr>
+          <tr>
+            <td data-label="Fonte / dati"><strong>SQLite – vehicles</strong></td>
+            <td data-label="Finalità">Dati veicolo: id, userId, nome, marca, modello, tipo carburante, capacità serbatoio, consumo ideale, stato sync, legacyId; usati per gestione veicoli, statistiche e sincronizzazione.</td>
+            <td data-label="Conservazione">Fino a eliminazione del veicolo o dell’app.</td>
+          </tr>
+          <tr>
+            <td data-label="Fonte / dati"><strong>SQLite – fuel_entries</strong></td>
+            <td data-label="Finalità">Dati rifornimento: id, userId, vehicleId, nome veicolo, km, litri, prezzo/litro, data, pieno/saltato, carburante, percorso, note, stato sync; usati per storico, statistiche e backup.</td>
+            <td data-label="Conservazione">Fino a eliminazione del record o dell’app.</td>
+          </tr>
+          <tr>
+            <td data-label="Fonte / dati"><strong>Firestore (cloud)</strong></td>
+            <td data-label="Finalità">Copia cloud dei dati di vehicles e fuel_entries associati allo userId per backup, ripristino e sincronizzazione multi-device.</td>
+            <td data-label="Conservazione">Fino a chiusura account o richiesta di cancellazione.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Condivisione e sicurezza</h2>
+      <p>I dati non sono venduti. Possono essere trattati da fornitori tecnici indispensabili, come Google/Firebase, e comunicati alle autorità solo nei casi previsti dalla legge. Sono adottate misure tecniche e organizzative ragionevoli per proteggerli da accessi non autorizzati, perdita o uso illecito.</p>
+
+      <h2>Diritti dell’utente</h2>
+      <p>L’utente attraverso la disinstallazione dell’app potrà eliminare tutti i dati memorizzati localmente sul dispositivo e tutti i dati cloud associati, come veicoli e registrazioni dei rifornimenti, utilizzando l’apposita funzione <strong>“Elimina account e dati”</strong> presente nelle Impostazioni dell’app.</p>
+
+      <h2>Contatti</h2>
+      <p><a href="mailto:stefanomiteglio.dev@gmail.com">stefanomiteglio.dev@gmail.com</a></p>
+
+      <div class="note">
+        <strong>Download documento originale:</strong> se carichi nella repository anche il file <code>informativa-privacy-playstore.docx</code>, il pulsante in alto permetterà di scaricarlo direttamente da GitHub Pages.
+      </div>
+    </section>
+
+    <p class="footer">Pagina privacy pubblica per consultazione in app e su Google Play.</p>
+  </main>
+</body>
+</html>
